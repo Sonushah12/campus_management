@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Faculty-Reg</title>
+      <link rel="icon" href="images/logo/logo_small.png" type="image/png" />
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Faculty
+            Registration
+         </div>
+         <form action="tsignup.php" method="POST">
+            <div class="field">
+               <input type="text" required name="name">
+               <label>Full Name </label>
+            </div>
+        
+            <div class="field">
+                <input type="email" required name="email">
+                <label>Email</label>
+             </div>
+
+
+           
+
+
+             <div class="field">
+                <input type="password" required name="password">
+                <label>Password</label>
+             </div>
+             <div class="field">
+               <input type="password" required name="cpassword">
+               <label>Repeat Password</label>
+            </div>
+
+            <div class="field">
+               <input type="number" required name="mobile">
+               <label>Mobile Number</label>
+            </div>
+            
+
+            <!-- <div class="content">  
+            </div> -->
+            <div class="field">
+               <input type="submit" value="Signup" name="submit">
+            </div>
+            <div class="signup-link">
+               Already a member <a href="login.html">Login</a> Here
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
