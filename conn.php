@@ -9,6 +9,4 @@
     echo "Not successful";
   }
 //   echo "Connection successful<br>";
-//addddddddd
-
 ?>
