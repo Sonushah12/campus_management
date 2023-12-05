@@ -1,7 +1,7 @@
 <?php
 
     include "con.php";
-// dfgf
+
     $status = $statusMsg = ''; 
     if(isset($_POST["submit"])){ 
         $status = 'error'; 
