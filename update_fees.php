@@ -3,7 +3,7 @@
   if(!ISSET($_SESSION['email'])){
      header('location:login.html');
   }
-include "con.php";
+include "conn.php";
   $id = $_GET['id'];
   echo $id;
   $sql = "SELECT * FROM `fees` WHERE af_id=$id";

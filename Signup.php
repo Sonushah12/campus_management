@@ -1,6 +1,6 @@
 <?php
 
-include "con.php";
+include "conn.php";
 
 $e_no = "";
  if (isset($_SESSION['username'])) {

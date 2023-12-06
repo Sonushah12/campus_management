@@ -1,6 +1,6 @@
 <?php
     //sonu
-        include "con.php";
+        include "conn.php";
       
         $id = $_GET['id'];
         // echo $id;

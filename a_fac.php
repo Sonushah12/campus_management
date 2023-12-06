@@ -1,6 +1,6 @@
 <?php
     //sahil
-    include "con.php";
+    include "conn.php";
 
     $status = $statusMsg = ''; 
     if(isset($_POST["submit"])){ 

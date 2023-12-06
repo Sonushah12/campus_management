@@ -104,7 +104,7 @@
 
 
                                             <?php
-                                                        include "con.php";
+                                                        include "conn.php";
 
                                                             $sql = "SELECT * FROM `fees` WHERE `Department`='$Department' and `sem`='$sem'";
                                                             $result = $con->query($sql);

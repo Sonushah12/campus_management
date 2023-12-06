@@ -1,5 +1,5 @@
 <?php
-include "con.php";
+include "conn.php";
 if (isset($_POST['submit'])) {
     // Check if any value is empty
     if (!empty($_POST['amount']) && !empty($_POST['year']) && !empty($_POST['Department']) && !empty($_POST['Semester'])) {

@@ -169,7 +169,7 @@
 
 
                                             <?php
-                                                        include "con.php";
+                                                        include "conn.php";
 
                                                             $sql = "SELECT * FROM fees";
                                                             $result = $con->query($sql);
