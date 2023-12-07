@@ -82,3 +82,44 @@
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+
+<h2>Image Upload</h2>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="image">Select Image:</label>
+    <input type="file" name="image" accept="image/*" required>
+    <br>
+    <input type="submit" value="Upload Image">
+</form>
+
+</body>
+</html>
+
+
+<?php
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Check if the file was uploaded without errors
+    if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
+        $uploadDir = 'uploads/';
+        $uploadFile = $uploadDir . basename($_FILES['image']['name']);
+
+        // Move the uploaded file to the specified directory
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile)) {
+            echo "File uploaded successfully.";
+        } else {
+            echo "Error uploading the file.";
+        }
+    } else {
+        echo "Error: " . $_FILES['image']['error'];
+    }
+}
+?>

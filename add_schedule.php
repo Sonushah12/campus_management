@@ -149,6 +149,8 @@
 </head>
 <body>
    <input type="file" name="u_file">
+   <br>
+   <input type="submit" name="submit" value="submit">
 </body>
 </html>
 
