@@ -1,7 +1,6 @@
 <?php
 
     include "conn.php";
-// dfgf
     $status = $statusMsg = ''; 
     if(isset($_POST["submit"])){ 
         $status = 'error'; 

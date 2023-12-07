@@ -96,7 +96,7 @@
                                  <div class="row">
                            <?php
 
-include "con.php";
+include "conn.php";
 
 $result = $con->query("SELECT * FROM `images`");
 

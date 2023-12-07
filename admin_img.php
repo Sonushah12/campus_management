@@ -1,4 +1,5 @@
 <?php
+   //sonu shah
   session_start();
   if(!ISSET($_SESSION['email'])){
      header('location:login.html');
@@ -168,7 +169,7 @@
 
 
                                             <?php
-                                                        include "con.php";
+                                                        include "conn.php";
 
                                                         $result = $con->query("SELECT * FROM `images`");
 

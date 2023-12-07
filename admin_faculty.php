@@ -131,7 +131,7 @@
                                  <!-- end column contact blog -->
                                  <!-- column contact -->
                                  <?php
-                                    include "con.php";
+                                    include "conn.php";
 
                                      $sql = "SELECT * FROM faculty";
                                   $result = $con->query($sql);
