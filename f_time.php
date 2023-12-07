@@ -3,8 +3,11 @@
   session_start();
   if(!ISSET($_SESSION['fname'])){
      header('location:login.html');
+     exit; // It's a good practice to exit after a redirect
   }
    ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,7 +54,7 @@
          ?>
          <!-- end topbar -->
          <!-- dashboard inner -->
-         <div class="midde_cont">
+         <!-- <div class="midde_cont">
             <div class="container-fluid">
                <div class="row column_title">
                   <div class="col-md-12">
@@ -80,7 +83,7 @@
                </div>
 
                <div class="col-md-6 col-lg-3">
-                  <a href="f_time.php">
+                  <a href="login.html">
                      <div class="full counter_section margin_bottom_30">
                         <div class="couter_icon">
                            <div>
@@ -133,40 +136,58 @@
                </a>
             </div>
             <div class="row column3">
-            </div>
-            <!-- footer -->
-
-            <?php
-         require('footer.php');
-         ?>
+            </div> -->
           
-         <!-- end dashboard inner -->
-      </div>
-   </div>
-   </div>
-   <!-- jQuery -->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <!-- wow animation -->
-   <script src="js/animate.js"></script>
-   <!-- select country -->
-   <script src="js/bootstrap-select.js"></script>
-   <!-- owl carousel -->
-   <script src="js/owl.carousel.js"></script>
-   <!-- chart js -->
-   <script src="js/Chart.min.js"></script>
-   <script src="js/Chart.bundle.min.js"></script>
-   <script src="js/utils.js"></script>
-   <script src="js/analyser.js"></script>
-   <!-- nice scrollbar -->
-   <script src="js/perfect-scrollbar.min.js"></script>
-   <script>
-      var ps = new PerfectScrollbar('#sidebar');
-   </script>
-   <!-- custom js -->
-   <script src="js/custom.js"></script>
-   <script src="js/chart_custom_style1.js"></script>
-</body>
+   
 
-</html>
+
+
+<!-- schedule add -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>College Schedule</title>
+</head>
+<body>
+
+    <div class="container">
+        <br>
+        <br>
+        <h1>College Schedule</h1>
+        <br>
+        <br>
+
+        <div class="buttons-container">
+            <a href="view_schedule.php" class="btn">View Schedule</a>
+            <a href="add_schedule.php" class="btn">Add Schedule</a>
+        </div>
+
+        
+<style>
+
+/* ... Your existing styles ... */
+
+.buttons-container {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+</style>

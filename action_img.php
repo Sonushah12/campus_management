@@ -1,5 +1,5 @@
 <?php
-        include "con.php";
+        include "conn.php";
         // $Divison = "";
         $id = $_GET['id'];
         // echo $id;

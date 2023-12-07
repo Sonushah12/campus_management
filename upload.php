@@ -1,6 +1,6 @@
 <?php
 
-    include "con.php";
+    include "conn.php";
 // dfgf
     $status = $statusMsg = ''; 
     if(isset($_POST["submit"])){ 

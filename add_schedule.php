@@ -1,8 +1,7 @@
-
 <?php
   session_start();
-  if(!ISSET($_SESSION['fname'])){
-     header('location:login.html');
+  if(!ISSET($_SESSION['email'])){
+    // header('location:login.html');
   }
    ?>
 <!DOCTYPE html>
@@ -16,7 +15,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>Faculty-Dashboard</title>
+   <title>Admin-Image</title>
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -47,11 +46,11 @@
       <div class="inner_container">
          <!-- Sidebar  -->
          <?php
-         require('f_sidebar.php');
+         require('ad_sidebar.php');
          ?>
          <!-- end topbar -->
          <!-- dashboard inner -->
-         <div class="midde_cont">
+         <!-- <div class="midde_cont">
             <div class="container-fluid">
                <div class="row column_title">
                   <div class="col-md-12">
@@ -80,7 +79,7 @@
                </div>
 
                <div class="col-md-6 col-lg-3">
-                  <a href="f_time.php">
+                  <a href="login.html">
                      <div class="full counter_section margin_bottom_30">
                         <div class="couter_icon">
                            <div>
@@ -133,40 +132,23 @@
                </a>
             </div>
             <div class="row column3">
-            </div>
+            </div> -->
             <!-- footer -->
+            <div>
 
-            <?php
-         require('footer.php');
-         ?>
-          
-         <!-- end dashboard inner -->
-      </div>
-   </div>
-   </div>
-   <!-- jQuery -->
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <!-- wow animation -->
-   <script src="js/animate.js"></script>
-   <!-- select country -->
-   <script src="js/bootstrap-select.js"></script>
-   <!-- owl carousel -->
-   <script src="js/owl.carousel.js"></script>
-   <!-- chart js -->
-   <script src="js/Chart.min.js"></script>
-   <script src="js/Chart.bundle.min.js"></script>
-   <script src="js/utils.js"></script>
-   <script src="js/analyser.js"></script>
-   <!-- nice scrollbar -->
-   <script src="js/perfect-scrollbar.min.js"></script>
-   <script>
-      var ps = new PerfectScrollbar('#sidebar');
-   </script>
-   <!-- custom js -->
-   <script src="js/custom.js"></script>
-   <script src="js/chart_custom_style1.js"></script>
+</div>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <input type="file" name="u_file">
 </body>
-
 </html>
+

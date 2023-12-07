@@ -87,7 +87,7 @@
 
 
                                             <?php
-                                                        include "con.php";
+                                                        include "conn.php";
 
                                                             $sql = "SELECT * FROM temp_student";
                                                             $result = $con->query($sql);
